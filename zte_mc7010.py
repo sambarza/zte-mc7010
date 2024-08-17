@@ -144,9 +144,10 @@ async def main():
 
     login_token = await login(host, password)
     active_band = await get_active_band(host, login_token)
-    await speed_up(host, login_token)
+    speedup_response = await speed_up(host, login_token)
 
-    print(active_band)
+    print("Active BAND before speed up:", active_band)
+    print("Speed UP response:", speedup_response)
 
 
 if __name__ == "__main__":
