@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+"""
+This script provides an interface to interact with the ZTE MC7010 router.
+It includes functions to login, retrieve the active band, and perform a speed-up operation.
+"""
+
 
 import asyncio
 import aiohttp
